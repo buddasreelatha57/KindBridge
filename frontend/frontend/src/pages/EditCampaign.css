@@ -1,0 +1,189 @@
+.edit-campaign-container {
+
+    width: 90%;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 30px;
+
+    background: #ffffff;
+    border-radius: 15px;
+
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+
+}
+
+
+.edit-campaign-container h2 {
+
+    text-align: center;
+    margin-bottom: 25px;
+
+    color: #0f766e;
+    font-size: 28px;
+
+}
+
+
+
+.edit-campaign-container form {
+
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+
+    gap: 20px;
+
+}
+
+
+
+.edit-campaign-container input,
+.edit-campaign-container textarea,
+.edit-campaign-container select {
+
+
+    width: 100%;
+
+    padding: 12px 14px;
+
+    border: 1px solid #d1d5db;
+
+    border-radius: 8px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    transition: 0.3s;
+
+}
+
+
+
+.edit-campaign-container input:focus,
+.edit-campaign-container textarea:focus,
+.edit-campaign-container select:focus {
+
+
+    border-color: #0fb3a0;
+
+    box-shadow: 0 0 5px rgba(15,179,160,0.3);
+
+}
+
+
+
+.edit-campaign-container textarea {
+
+    min-height: 120px;
+
+    resize: vertical;
+
+}
+
+
+
+.edit-campaign-container textarea[name="description"],
+.edit-campaign-container textarea[name="story"] {
+
+    grid-column: span 2;
+
+}
+
+
+
+.edit-campaign-container label {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 10px;
+
+    font-size: 15px;
+
+}
+
+
+
+.edit-campaign-container label input {
+
+    width: auto;
+
+}
+
+
+
+.edit-campaign-container button {
+
+
+    grid-column: span 2;
+
+    padding: 14px;
+
+    border: none;
+
+    border-radius: 10px;
+
+
+    background: #0fb3a0;
+
+    color: white;
+
+    font-size: 16px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+
+    transition: 0.3s;
+
+}
+
+
+
+.edit-campaign-container button:hover {
+
+
+    background: #087f73;
+
+    transform: translateY(-2px);
+
+}
+
+
+
+/* Loading */
+
+.edit-campaign-container h3 {
+
+    text-align:center;
+
+    color:#0f766e;
+
+}
+
+
+
+/* Responsive */
+
+@media(max-width:768px){
+
+
+    .edit-campaign-container form {
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .edit-campaign-container textarea[name="description"],
+    .edit-campaign-container textarea[name="story"],
+    .edit-campaign-container button {
+
+        grid-column:span 1;
+
+    }
+
+
+}

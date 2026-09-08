@@ -1,0 +1,51 @@
+.quick-actions{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+    margin-top:35px;
+
+}
+
+.action-card{
+
+    background:var(--card);
+
+    border-radius:18px;
+
+    padding:35px;
+
+    text-align:center;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.08);
+
+}
+
+.action-card:hover{
+
+    transform:translateY(-6px);
+
+}
+
+.action-card svg{
+
+    font-size:40px;
+
+    color:var(--primary);
+
+    margin-bottom:18px;
+
+}
+
+.action-card h4{
+
+    color:var(--text);
+
+}

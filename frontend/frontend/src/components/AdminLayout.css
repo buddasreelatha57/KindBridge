@@ -1,0 +1,43 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+.admin-layout{
+    display:flex;
+    min-height:100vh;
+    background:#f4f7fb;
+}
+
+/* Main Area */
+.admin-main{
+    flex:1;
+    margin-left:260px;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+    transition:.3s;
+}
+
+/* Page Content */
+.admin-content{
+    flex:1;
+    padding:30px;
+    background:#f4f7fb;
+    overflow-y:auto;
+}
+
+
+/* Mobile */
+@media(max-width:992px){
+
+    .admin-main{
+        margin-left:0;
+    }
+
+    .admin-content{
+        padding:20px;
+    }
+
+}

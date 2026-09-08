@@ -1,0 +1,344 @@
+.admin-profile-page{
+
+    padding:30px;
+
+    background:#f5f8f8;
+
+    min-height:100vh;
+
+}
+
+
+
+.profile-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:#0f766e;
+
+    margin-bottom:30px;
+
+}
+
+
+.profile-header svg{
+
+    font-size:28px;
+
+}
+
+
+
+.profile-layout{
+
+    display:grid;
+
+    grid-template-columns:350px 1fr;
+
+    gap:30px;
+
+}
+
+
+
+/* Profile */
+
+
+.profile-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    text-align:center;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+
+}
+
+
+
+.profile-card img{
+
+    width:120px;
+
+    height:120px;
+
+    border-radius:50%;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.profile-card h1{
+
+    margin:10px 0;
+
+    color:#123;
+
+}
+
+
+
+.role{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:8px 18px;
+
+    border-radius:20px;
+
+    background:#d9f7f2;
+
+    color:#087f73;
+
+    font-weight:600;
+
+}
+
+
+
+
+.profile-details{
+
+    margin-top:25px;
+
+}
+
+
+.profile-details div{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    margin:15px 0;
+
+    color:#555;
+
+}
+
+
+.profile-details svg{
+
+    color:#0fb3a0;
+
+}
+
+
+
+.password-btn,
+.logout-btn{
+
+
+    width:100%;
+
+    padding:13px;
+
+    border:none;
+
+    border-radius:10px;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    font-weight:600;
+
+}
+
+
+
+.password-btn{
+
+    background:#0fb3a0;
+
+    color:white;
+
+}
+
+
+
+/* Settings */
+
+
+.settings-card{
+
+    background:white;
+
+    padding:30px;
+
+    border-radius:18px;
+
+    box-shadow:0 8px 25px rgba(0,0,0,0.08);
+
+}
+
+
+
+.settings-card h2{
+
+    margin-bottom:25px;
+
+}
+
+
+
+.setting-item{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:18px 0;
+
+    border-bottom:1px solid #eee;
+
+}
+
+
+
+.setting-item div{
+
+    display:flex;
+
+    gap:12px;
+
+    align-items:center;
+
+}
+
+
+
+.setting-item svg{
+
+    color:#0fb3a0;
+
+}
+
+
+
+/* Toggle */
+
+.switch{
+
+    position:relative;
+
+    width:45px;
+
+    height:22px;
+
+}
+
+
+
+.switch input{
+
+    display:none;
+
+}
+
+
+
+.slider{
+
+    position:absolute;
+
+    inset:0;
+
+    background:#ccc;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+}
+
+
+
+.slider:before{
+
+    content:"";
+
+    position:absolute;
+
+    height:18px;
+
+    width:18px;
+
+    left:2px;
+
+    bottom:2px;
+
+    background:white;
+
+    border-radius:50%;
+
+    transition:.3s;
+
+}
+
+
+
+input:checked + .slider{
+
+    background:#0fb3a0;
+
+}
+
+
+
+input:checked + .slider:before{
+
+    transform:translateX(23px);
+
+}
+
+
+
+.logout-btn{
+
+    margin-top:30px;
+
+    background:#dc2626;
+
+    color:white;
+
+}
+
+
+
+@media(max-width:900px){
+
+
+    .profile-layout{
+
+        grid-template-columns:1fr;
+
+    }
+
+}

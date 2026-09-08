@@ -1,0 +1,53 @@
+.dashboard{
+
+    padding:30px;
+
+}
+
+.dashboard-header{
+
+    margin-bottom:35px;
+
+}
+
+.dashboard-header h1{
+
+    color:var(--text);
+
+    font-size:34px;
+
+}
+
+.dashboard-header p{
+
+    color:var(--text-light);
+
+    margin-top:8px;
+
+}
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+    gap:25px;
+
+}
+
+@media(max-width:768px){
+
+.dashboard{
+
+    padding:20px;
+
+}
+
+.stats-grid{
+
+    grid-template-columns:1fr;
+
+}
+
+}

@@ -1,0 +1,328 @@
+/* ================= PAGE ================= */
+
+.add-campaign-page {
+    padding: 35px;
+    background: #f5f7fb;
+    min-height: 100vh;
+}
+
+.page-header {
+    margin-bottom: 30px;
+}
+
+.page-header h1 {
+    font-size: 32px;
+    color: #16324f;
+    margin-bottom: 8px;
+}
+
+.page-header p {
+    color: #6b7280;
+    font-size: 15px;
+}
+
+/* ================= LAYOUT ================= */
+
+.campaign-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 30px;
+    align-items: flex-start;
+}
+
+/* ================= FORM CARD ================= */
+
+.campaign-form-card {
+    background: #fff;
+    border-radius: 16px;
+    padding: 30px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+}
+
+/* ================= FORM SECTION ================= */
+
+.form-section {
+    margin-bottom: 35px;
+}
+
+.form-section h2 {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #0f766e;
+    margin-bottom: 20px;
+    font-size: 22px;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 10px;
+}
+
+.form-section label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #374151;
+}
+
+/* ================= INPUTS ================= */
+
+.form-section input,
+.form-section select,
+.form-section textarea {
+    width: 100%;
+    padding: 13px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+    transition: .3s;
+    box-sizing: border-box;
+}
+
+.form-section textarea {
+    resize: vertical;
+}
+
+.form-section input:focus,
+.form-section textarea:focus,
+.form-section select:focus {
+    border-color: #0f766e;
+    box-shadow: 0 0 0 3px rgba(15,118,110,.15);
+}
+
+/* ================= CHECKBOX ================= */
+
+.checkbox {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.checkbox input {
+    width: 18px;
+    height: 18px;
+}
+
+/* ================= BUTTON ================= */
+
+.create-btn {
+    width: 100%;
+    margin-top: 15px;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #0f766e;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.create-btn:hover {
+    background: #115e59;
+}
+
+/* ================= PREVIEW CARD ================= */
+
+.preview-card {
+    position: sticky;
+    top: 20px;
+    background: white;
+    border-radius: 16px;
+    box-shadow: 0 10px 25px rgba(0,0,0,.08);
+    overflow: hidden;
+}
+
+.preview-card h3 {
+    text-align: center;
+    padding: 18px;
+    background: #0f766e;
+    color: white;
+    margin: 0;
+}
+
+/* ================= IMAGE ================= */
+
+.image-preview {
+    width: 100%;
+    height: 220px;
+    background: #ececec;
+}
+
+.image-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.placeholder {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 220px;
+    color: gray;
+}
+
+/* ================= CONTENT ================= */
+
+.preview-card h2 {
+    padding: 18px 20px 8px;
+    font-size: 24px;
+    color: #16324f;
+}
+
+.preview-category {
+    display: inline-block;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    padding: 6px 14px;
+    border-radius: 20px;
+    background: #e0f2fe;
+    color: #0369a1;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* ================= BENEFICIARY ================= */
+
+.preview-beneficiary {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 20px;
+}
+
+.preview-beneficiary img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.preview-beneficiary strong {
+    display: block;
+    font-size: 18px;
+}
+
+.preview-beneficiary p {
+    margin: 5px 0;
+    color: #666;
+}
+
+.preview-beneficiary small {
+    color: #777;
+}
+
+/* ================= STORY ================= */
+
+.preview-story {
+    padding: 0 20px 20px;
+}
+
+.preview-story h4 {
+    margin-bottom: 10px;
+    color: #16324f;
+}
+
+.preview-story p {
+    color: #555;
+    line-height: 1.7;
+    text-align: justify;
+}
+
+/* ================= AMOUNT ================= */
+
+.preview-amount {
+    margin: 20px;
+    background: #f3f4f6;
+    padding: 18px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    color: #16a34a;
+}
+
+/* ================= STATUS ================= */
+
+.verification {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.verified {
+    display: inline-block;
+    background: #dcfce7;
+    color: #15803d;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+.pending {
+    display: inline-block;
+    background: #fef3c7;
+    color: #b45309;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: 600;
+}
+
+/* ================= BADGES ================= */
+
+.featured,
+.urgent {
+    width: fit-content;
+    margin: 12px auto;
+    padding: 10px 20px;
+    border-radius: 30px;
+    font-weight: bold;
+}
+
+.featured {
+    background: #fff7cc;
+    color: #ca8a04;
+}
+
+.urgent {
+    background: #fee2e2;
+    color: #dc2626;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 992px) {
+
+    .campaign-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .preview-card {
+        position: static;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .add-campaign-page {
+        padding: 20px;
+    }
+
+    .campaign-form-card {
+        padding: 20px;
+    }
+
+    .preview-card h2 {
+        font-size: 22px;
+    }
+
+    .preview-beneficiary {
+        flex-direction: column;
+        text-align: center;
+    }
+
+}

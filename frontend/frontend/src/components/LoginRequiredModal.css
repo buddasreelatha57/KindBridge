@@ -1,0 +1,60 @@
+.modal-overlay{
+    position:fixed;
+    inset:0;
+    background:rgba(0,0,0,.5);
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+.login-modal{
+    width:420px;
+    background:white;
+    border-radius:12px;
+    padding:30px;
+    text-align:center;
+}
+
+.login-modal h2{
+    color:#0f766e;
+    margin-bottom:15px;
+}
+
+.login-modal p{
+    color:#555;
+    margin-bottom:25px;
+    line-height:1.6;
+}
+
+.modal-buttons{
+    display:flex;
+    gap:15px;
+}
+
+.modal-buttons button{
+    flex:1;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    font-size:16px;
+}
+
+.login-btn{
+    background:#0f766e;
+    color:white;
+}
+
+.register-btn{
+    background:#14b8a6;
+    color:white;
+}
+
+.close-btn{
+    margin-top:20px;
+    border:none;
+    background:none;
+    cursor:pointer;
+    color:#666;
+}

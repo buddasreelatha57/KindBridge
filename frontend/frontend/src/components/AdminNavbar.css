@@ -1,0 +1,562 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Poppins",sans-serif;
+}
+
+/*=========================
+   THEME VARIABLES
+=========================*/
+
+:root{
+
+    --primary:#0f766e;
+
+    --primary-dark:#115e59;
+
+    --bg:#f5f7fb;
+
+    --card:#ffffff;
+
+    --text:#1f2937;
+
+    --text-light:#6b7280;
+
+    --border:#e5e7eb;
+
+    --shadow:0 5px 20px rgba(0,0,0,.08);
+
+}
+
+body[data-theme="dark"]{
+
+    --bg:#111827;
+
+    --card:#1f2937;
+
+    --text:#f9fafb;
+
+    --text-light:#d1d5db;
+
+    --border:#374151;
+
+    --shadow:0 8px 25px rgba(0,0,0,.4);
+
+}
+
+/*=========================
+ NAVBAR
+=========================*/
+
+.admin-navbar{
+
+    height:75px;
+
+    background:var(--card);
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:0 35px;
+
+    border-bottom:1px solid var(--border);
+
+    position:sticky;
+
+    top:0;
+
+    z-index:100;
+
+    box-shadow:var(--shadow);
+
+}
+
+/*=========================
+ LEFT
+=========================*/
+
+.navbar-left h2{
+
+    color:var(--primary);
+
+    font-size:28px;
+
+    font-weight:700;
+
+}
+
+/*=========================
+ SEARCH
+=========================*/
+
+.navbar-center{
+
+    flex:1;
+
+    display:flex;
+
+    justify-content:center;
+
+}
+
+.search-box{
+
+    width:420px;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    background:var(--bg);
+
+    border:1px solid var(--border);
+
+    padding:12px 18px;
+
+    border-radius:12px;
+
+}
+
+.search-box svg{
+
+    color:var(--text-light);
+
+}
+
+.search-box input{
+
+    width:100%;
+
+    border:none;
+
+    outline:none;
+
+    background:none;
+
+    color:var(--text);
+
+    font-size:15px;
+
+}
+
+.search-box input::placeholder{
+
+    color:var(--text-light);
+
+}
+
+/*=========================
+ RIGHT
+=========================*/
+
+.navbar-right{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+/*=========================
+ THEME BUTTON
+=========================*/
+
+.theme-btn{
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--bg);
+
+    color:var(--primary);
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:18px;
+
+    transition:.3s;
+
+}
+
+.theme-btn:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+/*=========================
+ NOTIFICATION
+=========================*/
+
+.notification-wrapper{
+
+    position:relative;
+
+}
+
+.notification-btn{
+
+    width:45px;
+
+    height:45px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--bg);
+
+    cursor:pointer;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    color:var(--primary);
+
+    font-size:19px;
+
+    transition:.3s;
+
+}
+
+.notification-btn:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+}
+
+.badge{
+
+    position:absolute;
+
+    top:-5px;
+
+    right:-4px;
+
+    background:#ef4444;
+
+    color:white;
+
+    width:20px;
+
+    height:20px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    font-size:11px;
+
+    font-weight:600;
+
+}
+
+/*=========================
+ NOTIFICATION DROPDOWN
+=========================*/
+
+.notification-dropdown{
+
+    position:absolute;
+
+    right:0;
+
+    top:60px;
+
+    width:330px;
+
+    background:var(--card);
+
+    border-radius:15px;
+
+    box-shadow:var(--shadow);
+
+    overflow:hidden;
+
+    border:1px solid var(--border);
+
+}
+
+.dropdown-title{
+
+    padding:16px 20px;
+
+    font-weight:700;
+
+    color:var(--text);
+
+    border-bottom:1px solid var(--border);
+
+}
+
+.notification-item{
+
+    padding:15px 20px;
+
+    cursor:pointer;
+
+    border-bottom:1px solid var(--border);
+
+    transition:.3s;
+
+}
+
+.notification-item:hover{
+
+    background:var(--bg);
+
+}
+
+.notification-item.unread{
+
+    background:#ecfeff;
+
+}
+
+body[data-theme="dark"] .notification-item.unread{
+
+    background:#0f172a;
+
+}
+
+.notification-item h4{
+
+    color:var(--text);
+
+    margin-bottom:6px;
+
+    font-size:15px;
+
+}
+
+.notification-item p{
+
+    color:var(--text-light);
+
+    font-size:13px;
+
+    line-height:1.5;
+
+}
+
+.notification-item small{
+
+    color:gray;
+
+}
+
+/*=========================
+ PROFILE
+=========================*/
+
+.profile-wrapper{
+
+    position:relative;
+
+}
+
+.admin-profile{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    cursor:pointer;
+
+}
+
+.profile-icon{
+
+    font-size:46px;
+
+    color:var(--primary);
+
+}
+
+.admin-profile h4{
+
+    color:var(--text);
+
+    font-size:15px;
+
+}
+
+.admin-profile p{
+
+    color:var(--text-light);
+
+    font-size:13px;
+
+}
+
+.admin-profile svg:last-child{
+
+    color:var(--text-light);
+
+}
+
+/*=========================
+ PROFILE MENU
+=========================*/
+
+.profile-dropdown{
+
+    position:absolute;
+
+    top:60px;
+
+    right:0;
+
+    width:230px;
+
+    background:var(--card);
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+    border:1px solid var(--border);
+
+}
+
+.profile-dropdown a,
+
+.profile-dropdown button{
+
+    width:100%;
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    padding:15px 20px;
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    color:var(--text);
+
+    text-decoration:none;
+
+    font-size:15px;
+
+    transition:.3s;
+
+}
+
+.profile-dropdown a:hover,
+
+.profile-dropdown button:hover{
+
+    background:var(--bg);
+
+    color:var(--primary);
+
+}
+
+/*=========================
+ RESPONSIVE
+=========================*/
+
+@media(max-width:992px){
+
+    .search-box{
+
+        width:250px;
+
+    }
+
+}
+
+@media(max-width:768px){
+
+    .admin-navbar{
+
+        padding:15px;
+
+        flex-wrap:wrap;
+
+        height:auto;
+
+        gap:15px;
+
+    }
+
+    .navbar-center{
+
+        order:3;
+
+        width:100%;
+
+    }
+
+    .search-box{
+
+        width:100%;
+
+    }
+
+}
+
+@media(max-width:600px){
+
+    .admin-profile div{
+
+        display:none;
+
+    }
+
+    .notification-dropdown{
+
+        width:280px;
+
+        right:-20px;
+
+    }
+
+    .profile-dropdown{
+
+        width:200px;
+
+    }
+
+}
