@@ -88,7 +88,7 @@ function Hero() {
                 <div className="hero-right">
 
                     <img
-                        src={heroImage}
+                        src="https://www.bing.com/images/search?view=detailV2&ccid=%2fmI1Sp6n&id=69FF73D97FD0278AD34D5367CAAA653BC81B71AF&thid=OIP._mI1Sp6n2O51-TpCRbDxygHaD4&mediaurl=https%3a%2f%2fstorage.googleapis.com%2fkinderkrippe%2f2025-06-25%2f1d9af853-51fa-4c94-b14d-e99de9c48298.jpeg&exph=630&expw=1200&q=children+eduav&FORM=IRPRST&ck=D567185EDAE4395178A32EC5B812A283&selectedIndex=1&itb=0"
                         alt="Education"
                     />
 
