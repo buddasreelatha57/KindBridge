@@ -60,10 +60,11 @@ npm run dev
 ```
 The frontend application will start and typically be accessible at `http://localhost:5173`. Open this URL in your browser to view the application.
 
-## Deployment to Render (Docker)
+## Deployment
+
+### Backend Deployment (Render via Docker)
 Since Render's free tier does not natively support Java, we have provided a `Dockerfile` in the backend directory to easily deploy the Spring Boot application using Render's Docker environments.
 
-### Backend Deployment Steps
 1. Push your repository to GitHub.
 2. In the Render Dashboard, create a new **Web Service**.
 3. Connect your GitHub repository.
@@ -71,10 +72,13 @@ Since Render's free tier does not natively support Java, we have provided a `Doc
 5. In the settings, specify the **Root Directory** as `Backend/demo`.
 6. Click **Create Web Service**. Render will build and deploy the Spring Boot application using the provided `Dockerfile`.
 
-### Frontend Deployment Steps
-1. In the Render Dashboard, create a new **Static Site**.
-2. Connect your GitHub repository.
-3. Specify the **Root Directory** as `frontend/frontend`.
-4. Set the **Build Command** to `npm install && npm run build`.
-5. Set the **Publish Directory** to `dist`.
-6. Click **Create Static Site**.
+### Frontend Deployment (Vercel)
+Vercel is highly recommended for hosting Vite/React applications due to its zero-configuration setup for modern frontend frameworks.
+
+1. Create a free account on [Vercel](https://vercel.com/) and log in.
+2. Click on **Add New...** -> **Project**.
+3. Import your GitHub repository containing the `KindBridge` codebase.
+4. In the project configuration, Vercel will automatically detect the Vite setup.
+5. Set the **Root Directory** to `frontend/frontend` (click 'Edit' next to Root Directory and select the folder).
+6. The Build Command (`npm run build`) and Output Directory (`dist`) will be automatically filled by Vercel.
+7. Click **Deploy**. Vercel will build and deploy your frontend, providing you with a live URL.
