@@ -59,3 +59,22 @@ Start the Vite development server:
 npm run dev
 ```
 The frontend application will start and typically be accessible at `http://localhost:5173`. Open this URL in your browser to view the application.
+
+## Deployment to Render (Docker)
+Since Render's free tier does not natively support Java, we have provided a `Dockerfile` in the backend directory to easily deploy the Spring Boot application using Render's Docker environments.
+
+### Backend Deployment Steps
+1. Push your repository to GitHub.
+2. In the Render Dashboard, create a new **Web Service**.
+3. Connect your GitHub repository.
+4. Render will automatically detect the repository. Ensure **Docker** is selected as the runtime environment.
+5. In the settings, specify the **Root Directory** as `Backend/demo`.
+6. Click **Create Web Service**. Render will build and deploy the Spring Boot application using the provided `Dockerfile`.
+
+### Frontend Deployment Steps
+1. In the Render Dashboard, create a new **Static Site**.
+2. Connect your GitHub repository.
+3. Specify the **Root Directory** as `frontend/frontend`.
+4. Set the **Build Command** to `npm install && npm run build`.
+5. Set the **Publish Directory** to `dist`.
+6. Click **Create Static Site**.
