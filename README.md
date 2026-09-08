@@ -1,10 +1,61 @@
 # KindBridge
 
-Welcome to the KindBridge project!
+## Overview
+KindBridge is a comprehensive full-stack application designed to connect communities, streamline data management, and foster meaningful engagements. Built with a robust Spring Boot backend and a dynamic React frontend, it provides an intuitive platform for bridging the gap between various services, offering secure authentication, real-time data visualization, and a seamless user experience.
+
+## Why We Created KindBridge
+We created KindBridge to address the growing need for a unified, reliable, and scalable platform that can efficiently handle complex interactions while remaining incredibly user-friendly. The core motivations behind KindBridge are:
+- **Centralized Connectivity**: To provide a single point of interaction for users and services.
+- **Data-Driven Insights**: To offer visually appealing and interactive data representations (using tools like Chart.js) for better decision making.
+- **Scalability and Performance**: To ensure high performance and maintainability by leveraging modern, industry-standard technologies like Spring Boot and React with Vite.
+
+## Tech Stack
+- **Backend**: Java, Spring Boot, Maven
+- **Frontend**: React, Vite, Tailwind CSS, Chart.js, Framer Motion, Axios
 
 ## Project Structure
-- `Backend/`: Contains the backend code for the application.
-- `frontend/`: Contains the frontend code for the application.
+- `Backend/demo/`: Contains the Spring Boot backend application.
+- `frontend/frontend/`: Contains the React/Vite frontend application.
 
 ## Getting Started
-(Additional instructions on how to set up and run the project locally will be added here.)
+
+### Prerequisites
+Make sure you have the following installed on your machine:
+- [Java Development Kit (JDK)](https://www.oracle.com/java/technologies/javase-downloads.html) (Version 17 or higher recommended)
+- [Node.js](https://nodejs.org/) (Version 18 or higher recommended)
+- npm (comes with Node.js)
+
+### Installation & Running
+
+#### 1. Backend Setup (Spring Boot)
+Open your terminal and navigate to the backend directory:
+```bash
+cd Backend/demo
+```
+
+Run the Spring Boot application using the provided Maven Wrapper:
+```bash
+# For Windows
+mvnw.cmd spring-boot:run
+
+# For macOS/Linux
+./mvnw spring-boot:run
+```
+The backend server will start and typically run on `http://localhost:8080`.
+
+#### 2. Frontend Setup (React/Vite)
+Open a **new** terminal window and navigate to the frontend directory:
+```bash
+cd frontend/frontend
+```
+
+Install the required npm dependencies:
+```bash
+npm install
+```
+
+Start the Vite development server:
+```bash
+npm run dev
+```
+The frontend application will start and typically be accessible at `http://localhost:5173`. Open this URL in your browser to view the application.
