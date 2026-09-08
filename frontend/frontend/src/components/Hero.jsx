@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { useState } from "react";
 import LoginRequiredModal from "./LoginRequiredModal";
 import { getProfile } from "../services/userService";
+import heroImage from "../assets/education_hero.jpg";
 
 function Hero() {
 
@@ -87,7 +88,7 @@ function Hero() {
                 <div className="hero-right">
 
                     <img
-                        src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=700"
+                        src={heroImage}
                         alt="Education"
                     />
 
